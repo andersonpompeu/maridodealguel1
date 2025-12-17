@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marido de Aluguel em Maringá – Reparos Rápidos e Preço Justo</title>
+    <meta name="description" content="Eletricista, encanador e montador de móveis em Maringá. Atendimento rápido em todos os bairros com preço justo e garantia. Peça seu orçamento online!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Marido de Aluguel em Maringá - Serviços de Manutenção" />
+    <meta property="og:description" content="Precisa de reparos em Maringá? Elétrica, hidráulica, pintura e montagem de móveis com profissional de confiança." />
+    <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuBn8hq_YFHLLeke6LtPCX2fHSp0f-ugPEip1n9Uo7HRLXUBbKeorMjel_j3gGsq55oCl6FCcUqUpAZ_riHtDJvjRAy0HP-Tk_7rueRqnRr_OWpdLydj6V8Ek0QYQj55B3Se72gsV7AcKZGxU2hXj7pfGeumJ4vQbAeiYrciU4_GNj9plQvW6BAGnlmmWAjCfXZ9LGnZUqIE46GOEiaccu7ZrR1RQ5z1iAV0dUQkwVS_GaNmK1wEp6xLsq8wLcVl8nPlqpZScG5rB9k" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f9f506",
+              "primary-dark": "#d4d005",
+              "background-light": "#f8f8f5",
+              "background-dark": "#23220f",
+              "text-main": "#1c1c0d",
+              "text-muted": "#5e5e4a",
+              "border-color": "#e9e8ce",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"],
+              "body": ["Noto Sans", "sans-serif"],
+            },
+            borderRadius: { "lg": "2rem", "xl": "3rem" },
+            animation: { "fade-in": "fadeIn 0.5s ease-out" },
+            keyframes: { fadeIn: { "0%": { opacity: "0", transform: "translateY(10px)" }, "100%": { opacity: "1", transform: "translateY(0)" } } },
+          },
+        },
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      #root:empty { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+        background: #f8f8f5;
+      }
+      #root:empty::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 4px solid #e9e8ce;
+        border-top-color: #f9f506;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react-router": "https://esm.sh/react-router@6.22.3?deps=react@18.3.1,react-dom@18.3.1",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.3.1,react-dom@18.3.1",
+    "@remix-run/router": "https://esm.sh/@remix-run/router@1.15.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+  </head>
+  <body class="bg-background-light text-text-main font-display overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
