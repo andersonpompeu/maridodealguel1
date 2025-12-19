@@ -38,4 +38,5 @@ export interface NeighborhoodItem {
   seoTitle: string;
   image: string;
   keywords: string[];
+  faqs?: FaqItem[];
 }

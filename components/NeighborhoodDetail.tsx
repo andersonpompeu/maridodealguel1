@@ -96,6 +96,29 @@ const NeighborhoodDetail: React.FC = () => {
                 </div>
             </section>
 
+            {/* Neighborhood Specific FAQ Section */}
+            {neighborhood.faqs && (
+              <section className="mb-12">
+                <h2 className="text-2xl font-bold text-text-main mb-6 flex items-center gap-2">
+                    <Icon name="help" className="text-primary" />
+                    Dúvidas Frequentes em {neighborhood.shortName}
+                </h2>
+                <div className="space-y-4">
+                  {neighborhood.faqs.map((faq, index) => (
+                    <div key={index} className="bg-white border border-border-color rounded-2xl p-6 hover:shadow-md transition-shadow">
+                      <h3 className="font-bold text-text-main text-lg mb-3 flex items-start gap-3">
+                        <Icon name="question_answer" className="text-primary shrink-0 mt-1" />
+                        {faq.question}
+                      </h3>
+                      <p className="text-text-muted leading-relaxed ml-9">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             <section>
                 <h2 className="text-2xl font-bold text-text-main mb-6">Serviços Populares em {neighborhood.shortName}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
